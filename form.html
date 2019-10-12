@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $('.collapse').collapse
+          });
+
+</script>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+        <title>About Me</title>
+      </head>
+
+  <body>
+    <div class="container">
+        <div class="col=5">
+    <h1>
+      Add New Article
+    </h1>
+     <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Article Title </label>
+        <input type="article" class="form-control" id="articleInput" aria-describedby="articleHelp" placeholder="Title">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputauthorname">Author Name</label>
+        <input type="name" class="form-control" id="exampleInputauthorname" placeholder="Name">
+      </div>
+      </div>
+      </div>
+    </form>
+
+
+
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>
+                Upload Files:
+              </h2>
+              <form action="/action_page.php">
+                  <input type="file" id="myFile" name="filename2">
+                </form>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">Pages</label>
+                  <select class="form-control" id="exampleFormControlSelect1" placeholder="Academics">
+                    <option>Academics</option>
+                    <option>Food</option>
+                    <option>Fitness</option>
+                    <option>Sports</option>
+                    <option>Electronics</option>
+                  </select>
+                </div>
+            </div>
+          </div>
+          </div>
+          <div class="form-group">
+            <div class="container">
+                <div class="col=5">
+              <h2>
+              <label for="exampleFormControlTextarea1">Article Text</label>
+              </h2>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+            </div>
+            </div>
+            </div>
+
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h2>
+                    Select Tags
+                  </h2>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">C++</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Java</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Scala</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Perl</label>
+                  </div>
+
+
+                </div>
+                <div class="col">
+                  <h2>
+                    Visibility
+                  </h2>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Private
+                    </label>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+
+                  <div class="form-group">
+                    <h2>
+                      Login to Finish Submitting
+                    </h2>
+                    <input type="article" class="form-control" id="articleInput" aria-describedby="articleHelp" placeholder="Username">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    </br>
+                    </br>
+                    <div class="form-group row">
+                       <div class="col-sm-10">
+                         <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                       </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+                <div class="col">
+                  <div class="form-check">
+
+                    <div class="container">
+
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                      <label class="form-check-label" for="defaultCheck1">
+                  Remember Me
+                </label>
+                </div>
+              </div>
+              </div>
+            <div class="container">
+              <div class="col=0">
+            <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+
+
+
+
+
+      <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+      </script>
+
+  </body>
+</html>
